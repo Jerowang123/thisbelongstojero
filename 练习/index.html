@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			*{
+				margin: 0;
+				padding: 0px;
+			}
+			#line{
+				width: 0%;
+				height: 10px;
+				background: red;
+			}
+			#logo{
+				width: 152px;
+				position: fixed;
+				top: 50%;
+				left: 50%;
+				margin-left: -76px;
+				margin-top: -62px;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="line"></div>
+		<img id="logo" src="img/loog.png" />
+	</body>
+	<script type="text/javascript">
+		var line = document.querySelector("#line");
+		var i = 0;
+		var timer = setInterval(function(){
+			i+=1;
+			line.style.width = i+"%";
+			if(i==100){
+				clearInterval(timer);
+				window.open("description.html","_parent")
+			}
+		},20)
+	</script>
+</html>

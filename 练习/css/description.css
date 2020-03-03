@@ -1,0 +1,393 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+.box1{
+	width: 85px;
+	height: 100%;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	z-index: 99;
+	background: linear-gradient(to bottom,#e45711,#ee8210);
+}
+.logobox{
+	height: 126px;
+	background: white;
+	overflow: hidden;
+	text-align: center;
+}
+.logobox img{
+	display: block;
+	margin: 15px auto 5px;
+}
+.menu-btn{
+	width: 37px;
+	height: 21px;
+	position: absolute;
+	top:186px;
+	left: 24px;
+	
+	cursor: pointer;
+}
+.menu-btn2{
+	width: 37px;
+	height: 21px;
+	position: absolute;
+	top:186px;
+	left: 24px;
+	display: none;
+	cursor: pointer;
+}
+.line1,.line2{
+	height: 3px;
+	width: 37px;
+	background: white;
+	float: right;
+	transition: width 0.5s;
+}
+.line2{
+	margin: 6px 0px;
+}
+.line3{
+	height: 3px;
+	width: 26px;
+	background: white;
+	float: right;
+	transition: width 0.5s;
+}
+.line4,.line5{
+	height: 3px;
+	width: 37px;
+	background: white;
+	float: right;
+	transition: all 1s;
+}
+.line5{
+	margin: 6px 0px;
+}
+.line6{
+	height: 3px;
+	width: 26px;
+	background: white;
+	float: right;
+	transition: all 1s;
+}
+.menu-btn:hover .line1{
+	width: 50%;
+}
+.menu-btn:hover .line2{
+	width: 75%;
+}
+.menu-btn:hover .line3{
+	width: 100%;
+}
+.icon-box{
+	list-style: none;
+	position: absolute;
+	top: 250px;
+	left: 24px;
+	cursor: pointer;
+}
+.icon-box li>img{
+	display: block;
+	margin: 0 auto;
+	width: 30px;
+	height: 34px;
+}
+.icon-box li{
+	transition: all 0.5s;
+	position: relative;
+}
+.icon-box li:nth-child(2n){
+	height: 28px;
+	opacity: 0.3;
+	margin: 14px 0px;
+	background: url(../img/line.png) no-repeat center;
+}
+.icon-box li:hover{
+	padding-bottom: 10px;
+}
+.pagehome{
+	width: 0px;
+	height: 0px;
+	position: absolute;
+	top: 14px;
+	left: -24px;
+	background: url(../img/ia_100000032.png) no-repeat center center;
+	color: #e86711;
+	font-weight: 900;
+	overflow: hidden;
+}
+.icon-box li:hover .pagehome{
+	display: block;
+	animation:  mypagehome 1s linear forwards;
+}
+.pagehome img{
+	width: 30px;
+	height: 34px;
+	position: absolute;
+	top: 50%;
+	left: 22px;
+	margin-top: -17px;
+}
+.pagehome span{
+	position: absolute;
+	top: 50%;
+	left: 60px;
+	margin-top: -10px;
+	font-size: 18px;
+}
+.box3{
+	
+	width: 543px;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	left: -543px;
+	z-index: 88;
+	
+	background: linear-gradient(to bottom,#e45711,#ee8210);
+	
+}
+.box3 img{
+	width: 30px;
+	height: 30px;
+	display: block;
+	position: absolute;
+	top: 24px;
+	right: 24px;
+	transition: all 1s;	
+	cursor: pointer;
+}
+.box3 img:hover{
+	
+	transform: rotate(360deg);
+	transform-origin: center;
+	
+}
+.box4{
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	left: -100%;
+	z-index: 77;
+	background: rgb(0,0,0,0.5);
+	
+}
+.box2{
+	height: 1800px;
+	width: calc(100% - 85px);
+	
+	margin-left: 85px;
+	
+}
+.ul3{
+	width: 100%;
+	position: relative;
+	top: 116px;
+	
+}
+.li3{
+	width: 100%;
+	height: 50px;
+	overflow: hidden;
+	text-align: center;
+	line-height: 50px;
+	font-size: 25px;
+	color: white;
+	list-style: none;
+	margin-top: 40px;
+}
+.oul3{
+	
+	height: 80px;
+	text-align: center;
+	line-height: 30px;
+	list-style: none;
+	font-size: 16px;
+	position: relative;
+	
+}
+.box5{
+	width: 100%;
+	height: 266px;
+	position: relative;
+	overflow: hidden;
+}
+.box5 p{
+	
+	position: absolute;
+	z-index: 50;
+	top: 119px;
+	left: 32px;
+	font-size: 50px;
+	font-weight: 700;
+	color: white;
+}
+.im4{
+	width: 100%;
+	height: 266px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 40;
+	display: block;
+	
+}
+.nav{
+	width: 1200px;
+	height: 24px;
+	position: relative;
+	margin: 12px auto;
+	font-size: 14px;
+	line-height: 24px;
+}
+.nav a{
+	color: black;
+	text-decoration:none
+}
+.nav2{
+	width: 1200px;
+	height: 46px;
+	margin: 0 auto;
+	border-bottom: solid 1px gray;
+}
+.nav2 a{
+	width: 64px;
+	height: 46px;
+	color: black;
+	text-decoration: none;
+	display: inline-block;
+	margin-left: 32px;
+	float: right;
+	line-height: 46px;
+}
+.nav2 span{
+	width: 0px;
+	height: 15px;
+	display: inline-block;
+	border: solid gray 1px;
+	margin-top: 14.5px;
+	margin-left: 32px;
+	float: right;
+}
+.navp{
+	width: 100%;
+	height: 41px;
+	display: block;
+	margin-top: 61px;
+	text-align: center;
+	line-height: 41px;
+	font-size: 28px;
+	font-weight: 700;
+}
+.navsp{
+	width: 100%;
+	height: 34px;
+	display: block;
+	text-align: center;
+	line-height: 34px;
+
+	margin-bottom: 30px;
+}
+.lbox{
+	width: 1200px;
+	height: 319px;
+	position: relative;
+	overflow: hidden;
+	margin: 0 auto;
+}
+.fbox{
+	width: 4800px;
+	height: 319px;
+	position: absolute;
+	top: 0;
+	
+}
+.cbox{
+	width: 1200px;
+	height: 319px;
+	position: relative;
+	float: left;
+}
+.lfbtn{
+	width: 53px;
+	height: 100%;
+	float: left;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 50;
+	color: white;
+	font-size: 40px;
+	font-weight: 700;
+	text-align: center;
+	line-height: 320px;
+	background: gray;
+	cursor: pointer;
+}
+.cbox img{
+	width: 440px;
+	height: 303px;
+	position: absolute;
+	top: 8px;
+	left: 83px;
+	display: block;
+	
+}
+.lfbox{
+	width: 560px;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	right: 83px;
+	
+}
+.ribtn{
+	width: 53px;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	right: 0;
+	z-index: 49;
+	color: white;
+	font-size: 40px;
+	font-weight: 700;
+	text-align: center;
+	line-height: 320px;
+	background: gray;
+	cursor: pointer;
+}
+.tmbox{
+	width: 100%;
+	height: 31px;
+	font-size: 22px;
+	font-weight: 400;
+	color:#e15518 ;
+	line-height: 31px;
+}
+.lfbox a{
+	width: 100%;
+	height: 68px;
+	font-size: 22px;
+	font-weight: 400;
+	color: black;
+	text-decoration: none;
+	display: block;
+	
+	
+}
+.lfbox a:hover{
+	
+	color:#e15518 ;
+}
+.txbox{
+	width: 100%;
+	height: 96px;
+	
+}
+.btbox{
+	width: 100%;
+	height: 51px;
+}
